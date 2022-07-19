@@ -14,7 +14,10 @@
 .container {
     display: grid;
     grid-template-columns: max(250px, 20%) 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 6fr;
+    height: 100vh;
+    width: 100vw;
+
 }
 
 .sidebar {
@@ -23,7 +26,7 @@
     grid-row: span 2;
     display: grid;
     align-content: start;
-
+    height: 100vh;
 }
 
 .sidebar>* {
@@ -51,5 +54,65 @@ h1 {
 
 img {
     height: 50px;
+    border-radius: 50%;
+}
+
+.header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+
+}
+
+.header>.upper,
+.header>.lower {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-weight: bold;
+}
+
+input[type="search"] {
+    margin-right: auto;
+    width: max(200px, 50%);
+    height: 30px;
+    background-color: var(--light-grey-color);
+    border-style: none;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+.upper>img {
+    height: 30px;
+    margin: 15px;
+}
+
+.lower>img {
+    height: 70px;
+    margin-right: 15px;
+}
+
+.lower>button:first-of-type {
+    margin-left: auto;
+}
+
+.greeting>p:nth-child(2) {
+    font-size: 1.2rem;
+}
+
+.lower>button {
+    margin: 15px;
+    background-color: var(--grey-color);
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-size: 0.8rem;
+}
+
+.main {
+    display: grid;
+    overflow-y: auto;
+    background-color: var(--light-grey-color);
 }
 
