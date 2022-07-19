@@ -147,7 +147,7 @@ input[type="search"] {
     position: relative;
     display: grid;
     border-radius: 10px;
-    box-shadow: inset 10px 0px var(--blue-color);
+    border-left: 10px solid var(--blue-color);
 }
 
 .card>.card-text {
