@@ -5,106 +5,165 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Admin dashboard</title>
 </head>
 <body>
-    <div class="sidebar">
-        <h1>Dashboard</h1>
-        <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-        </ul>
-        <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
-        </ul>
-    </div>
-    <div class="header">
-        <div class="upper">
-            <input type="search" name="search" id="search">
+    <div class="container">
+        <div class="sidebar">
+            <div class="dashboard">
+                <span class="material-symbols-outlined">dashboard</span>
+                <h1>Dashboard</h1>
+            </div>
+            <ul>
+                <div>
+                    <span class="material-symbols-outlined">home</span>
+                    <li>Home</li>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">person</span>
+                    <li>Profile</li>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">forum</span>
+                    <li>Messages</li>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">history</span>
+                    <li>History</li>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">task</span>
+                    <li>Tasks</li>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">groups</span>
+                    <li>Communities</li>
+                </div>
+            </ul>
+            <ul>
+                <div>
+                    <span class="material-symbols-outlined">settings</span>
+                    <li>Settings</li>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">help</span>
+                    <li>Support</li>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">lock</span>
+                    <li>Privacy</li>
+                </div>
+            </ul>
         </div>
-        <div class="lower">
-            <p>Hi, there</p>
-            <p>Morgan Oakley (@morgan)</p>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+        <div class="header">
+            <div class="upper">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" name="search" id="search">
+                <span class="material-symbols-outlined">notifications_active</span>
+                <img src="./img/hero-cat.jpg" alt="profile picture">
+                <p>Morgan Oakley</p>
+            </div>
+            <div class="lower">
+                <img src="./img/hero-cat.jpg" alt="profile picture">
+                <p>Hi, there</p>
+                <p>Morgan Oakley (@morgan)</p>
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
         </div>
-    </div>
-    <div class="main">
-        <div class="projects">
-            <p>Your projects</p>
-            <div class="cards">
-                <div class="card">
-                    <p>Super Cool Project</p>
-                    <p>Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis nemo aperiam. Reprehenderit porro eos dignissimos beatae et voluptatem? Asperiores, sed praesentium!</p>
+        <div class="main">
+            <div class="projects">
+                <p>Your projects</p>
+                <div class="cards">
+                    <div class="card">
+                        <p>Super Cool Project</p>
+                        <p>Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis nemo aperiam. Reprehenderit porro eos dignissimos beatae et voluptatem? Asperiores, sed praesentium!</p>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
+                    <div class="card">
+                        <p>Less Cool Project</p>
+                        <p>Risus commodo viverra maecenas accumsan lacus vel. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Nec sagittis aliquam malesuada bibendum arcu vitae elementum.</p>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
+                    <div class="card">
+                        <p>Impossible App</p>
+                        <p>Amet purus gravida quis blandit turpis cursus. Enim facilisis gravida neque convallis a cras semper. Dapibus ultrices in iaculis nunc sed augue.</p>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
+                    <div class="card">
+                        <p>Easy Peasy App</p>
+                        <p>Turpis egestas integer eget aliquet nibh praesent tristique magna. Neque laoreet suspendisse interdum consectetur libero. Etiam erat velit scelerisque in dictum non consectetur a. Amet facilisis magna etiam tempor orci. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a.</p>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
+                    <div class="card">
+                        <p>Ad Blocker</p>
+                        <p>Turpis egestas integer eget aliquet nibh praesent tristique magna. Neque laoreet suspendisse interdum consectetur libero. Etiam erat velit scelerisque in dictum non consectetur a.</p>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
+                    <div class="card">
+                        <p>Money Maker</p>
+                        <p>Ullamcorper morbi tincidunt ornare massa eget egestas purus. Dis parturient montes nascetur ridiculus. Euismod quis viverra nibh cras pulvinar mattis. Mattis rhoncus urna neque viverra justo nec. Morbi leo urna molestie at elementum eu. Tincidunt praesent semper feugiat nibh sed pulvinar.</p>
+                        <span class="material-symbols-outlined">grade</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
                 </div>
-                <div class="card">
-                    <p>Less Cool Project</p>
-                    <p>Risus commodo viverra maecenas accumsan lacus vel. Nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Nec sagittis aliquam malesuada bibendum arcu vitae elementum.</p>
+            </div>
+            <div class="announcements">
+                <p>Announcements</p>
+                <div class="messages">
+                    <div class="message">
+                        <p>Site Maintenance</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores voluptatum ipsa cupiditate unde</p>
+                    </div>
+                    <div class="message">
+                        <p>Community Share Day</p>
+                        <p>Vel rem, ipsa officia commodi veniam excepturi, ex, molestias perspiciatis consequuntur sint error voluptatem</p>
+                    </div>
+                    <div class="message">
+                        <p>Updated Privacy Policy</p>
+                        <p>Accusamus nihil dicta, quisquam, similique doloremque unde quidem quaerat a possimus eum deleniti libero</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <p>Impossible App</p>
-                    <p>Amet purus gravida quis blandit turpis cursus. Enim facilisis gravida neque convallis a cras semper. Dapibus ultrices in iaculis nunc sed augue.</p>
-                </div>
-                <div class="card">
-                    <p>Easy Peasy App</p>
-                    <p>Turpis egestas integer eget aliquet nibh praesent tristique magna. Neque laoreet suspendisse interdum consectetur libero. Etiam erat velit scelerisque in dictum non consectetur a. Amet facilisis magna etiam tempor orci. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a.</p>
-                </div>
-                <div class="card">
-                    <p>Ad Blocker</p>
-                    <p>Turpis egestas integer eget aliquet nibh praesent tristique magna. Neque laoreet suspendisse interdum consectetur libero. Etiam erat velit scelerisque in dictum non consectetur a.</p>
-                </div>
-                <div class="card">
-                    <p>Money Maker</p>
-                    <p>Ullamcorper morbi tincidunt ornare massa eget egestas purus. Dis parturient montes nascetur ridiculus. Euismod quis viverra nibh cras pulvinar mattis. Mattis rhoncus urna neque viverra justo nec. Morbi leo urna molestie at elementum eu. Tincidunt praesent semper feugiat nibh sed pulvinar.</p>
+            </div>
+            <div class="trending">
+                <p>Trending</p>
+                <div class="persons">
+                    <div class="person">
+                        <img src="./img/cat1.jpg" alt="profile picture">
+                        <a href="#">@tegan</a>
+                        <a href="#">World Peace Builder</a>
+                    </div>
+                    <div class="person">
+                        <img src="./img/hero-cat.jpg" alt="profile picture">
+                        <a href="#">@morgan</a>
+                        <a href="#">Super Cool Project</a>
+                    </div>
+                    <div class="person">
+                        <img src="./img/cat2.jpg" alt="profile picture">
+                        <a href="#">@kendall</a>
+                        <a href="#">Life Changing App</a>
+                    </div>
+                    <div class="person">
+                        <img src="./img/cat3.jpg" alt="profile picture">
+                        <a href="#">@alex</a>
+                        <a href="#">No Traffic Maker</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="announcements">
-            <p>Announcements</p>
-            <div class="messages">
-                <div class="message">
-                    <p>Site Maintenance</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores voluptatum ipsa cupiditate unde</p>
-                </div>
-                <div class="message">
-                    <p>Community Share Day</p>
-                    <p>Vel rem, ipsa officia commodi veniam excepturi, ex, molestias perspiciatis consequuntur sint error voluptatem</p>
-                </div>
-                <div class="message">
-                    <p>Updated Privacy Policy</p>
-                    <p>Accusamus nihil dicta, quisquam, similique doloremque unde quidem quaerat a possimus eum deleniti libero</p>
-                </div>
-            </div>
-        </div>
-        <div class="trending">
-            <p>Trending</p>
-            <div class="persons">
-                <div class="person">
-                    <a href="#">@tegan</a>
-                    <a href="#">World Peace Builder</a>
-                </div>
-                <div class="person">
-                    <a href="#">@morgan</a>
-                    <a href="#">Super Cool Project</a>
-                </div>
-                <div class="person">
-                    <a href="#">@kendall</a>
-                    <a href="#">Life Changing App</a>
-                </div>
-                <div class="person">
-                    <a href="#">@alex</a>
-                    <a href="#">No Traffic Maker</a>
-                </div>
-            </div>
-        </div>
-
     </div>
 </body>
 </html>
