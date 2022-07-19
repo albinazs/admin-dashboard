@@ -1,1 +1,1 @@
-# admin-dashboard
+Admin dashboard project to show my intermediate HTML and CSS skills.
