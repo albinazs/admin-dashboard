@@ -20,6 +20,11 @@
 
 }
 
+span,
+button {
+    cursor: pointer;
+}
+
 .sidebar {
     background: var(--grey-color);
     color: white;
@@ -49,7 +54,7 @@ li {
 }
 
 h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 img {
@@ -112,7 +117,102 @@ input[type="search"] {
 
 .main {
     display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 1fr 1fr;
     overflow-y: auto;
     background-color: var(--light-grey-color);
+    padding: 20px;
+    gap: 20px;
 }
+
+.main>div>p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.projects {
+    grid-row: span 2;
+}
+
+.cards {
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    display: grid;
+    border-radius: 10px;
+}
+
+.card>.card-text>p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card>.card-text>p:nth-child(2) {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: var(--grey-color);
+}
+
+.card>.card-icons {
+    justify-self: end;
+}
+
+.messages, 
+.persons {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    gap: 15px;
+}
+
+.message {
+    border-bottom: solid 1px var(--light-grey-color);
+}
+
+.messages>.message:last-child {
+    border: none;
+}
+
+.message>p:first-child {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+}
+
+.message>p:last-child {
+    font-size: 0.7rem;
+    color: var(--grey-color);
+    margin-bottom: 15px;
+}
+
+.person {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.person>img {
+    grid-row: span 2;
+}
+
+.person a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: black;
+}
+
+.person>a:first-child {
+    align-self: end;
+}
+
+
+
+
 
