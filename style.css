@@ -136,6 +136,7 @@ input[type="search"] {
 
 .cards {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -145,6 +146,12 @@ input[type="search"] {
     position: relative;
     display: grid;
     border-radius: 10px;
+    box-shadow: inset 10px 0px var(--blue-color);
+}
+
+.card>.card-text {
+    height: 200px;
+    margin-bottom: 20px;
 }
 
 .card>.card-text>p:first-child {
@@ -194,23 +201,33 @@ input[type="search"] {
 .person {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
 }
 
-.person>img {
-    grid-row: span 2;
+.person img {
+    margin-right: 10px;
+}
+
+.person>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .person a {
     text-decoration: none;
     cursor: pointer;
     font-size: 0.8rem;
+    font-weight: bold;
     color: black;
 }
 
-.person>a:first-child {
-    align-self: end;
+.person>div>a:last-child {
+    color: var(--grey-color);
+    font-size: 0.7rem;
+    font-weight: normal;
+
 }
+
 
 
 
